@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -16,54 +20,56 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header container">
-      <!-- logo -->
-      <a href="index.html" class="header__logo"
-        ><span class="header__logo-blue">Web</span
-        ><span class="header__logo-black">Studio</span></a
-      >
+    <header>
+      <div class="header container">
+        <!-- logo -->
+        <a href="index.html" class="header__logo"
+          ><span class="header__logo-blue">Web</span
+          ><span class="header__logo-black">Studio</span></a
+        >
 
-      <!-- nav -->
-      <nav class="nav-container">
-        <ul class="nav">
-          <li class="nav__list">
-            <a href="index.html" class="nav__link">Студия</a>
+        <!-- nav -->
+        <nav class="nav-container">
+          <ul class="nav">
+            <li class="nav__list">
+              <a href="index.html" class="nav__link">Студия</a>
+            </li>
+            <li class="nav__list">
+              <a href="portfolio.html" class="nav__link">Портфолио</a>
+            </li>
+            <li class="nav__list">
+              <a href="index.html" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contacts -->
+        <ul class="contacts">
+          <li class="contacts__list">
+            <a href="mailto:info@devstudio.com" class="contacts__link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="nav__list">
-            <a href="portfolio.html" class="nav__link">Портфолио</a>
-          </li>
-          <li class="nav__list">
-            <a href="index.html" class="nav__link">Контакты</a>
+          <li class="contacts__list">
+            <a href="tel:+380961111111" class="contacts__link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <!-- contacts -->
-      <ul class="contacts">
-        <li class="contacts__list">
-          <a href="mailto:info@devstudio.com" class="contacts__link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts__list">
-          <a href="tel:+380961111111" class="contacts__link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="hero__container">
+        <div class="hero__container container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__button">Заказать услугу</button>
         </div>
       </section>
 
       <!-- Details -->
-      <section class="container">
-        <section class="specifics section">
+      <section class="section">
+        <div class="container">
           <ul class="specifics__box">
             <li class="specifics__list">
               <h3 class="specifics__title">Внимание к деталям</h3>
@@ -94,10 +100,12 @@
               </p>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!--we do -->
-        <section class="our-work">
+      <!--we do -->
+      <section class="our-work">
+        <div class="container">
           <h2 class="our-work__title">Чем мы занимаемся</h2>
           <ul class="our-work__box">
             <li class="our-work__list">
@@ -118,10 +126,12 @@
               />
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!-- Our team -->
-        <section class="our-team section">
+      <!-- Our team -->
+      <section class="our-team section">
+        <div class="container">
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__box">
             <li class="our-team__list">
@@ -153,7 +163,7 @@
               </div>
             </li>
           </ul>
-        </section>
+        </div>
       </section>
     </main>
 

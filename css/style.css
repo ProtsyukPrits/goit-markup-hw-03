@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', 'Railway', sans-serif;
+  font-family: "Roboto", "Railway", sans-serif;
   color: #000000;
 }
 
@@ -10,10 +10,11 @@ body {
 }
 
 .container {
-  margin: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Global correct */
@@ -25,8 +26,8 @@ body {
 .specifics__list,
 .our-work__box,
 .our-team__list,
-.anchors__box,
-.portfolio__box,
+.anchors,
+.portfolio,
 .footer__logo,
 .footer__list,
 .footer__link {
@@ -47,23 +48,22 @@ body {
 .our-team__name,
 .our-team__text,
 .footer__box,
-.anchors__box,
-.portfolio__box,
+.anchors,
+.portfolio,
 .portfolio__title,
 .portfolio__text {
   padding: 0;
   margin: 0;
 }
 
+.specifics__text,
+.our-team__text {
+  margin-top: 10px;
+}
+
 .nav__list:not(:last-child),
 .contacts__list:not(:last-child) {
   margin-right: 50px;
-}
-
-.specifics__list:not(:last-child),
-.our-work__list:not(:last-child),
-.our-team__list:not(:last-child) {
-  margin-right: 30px;
 }
 
 .our-work__title,
@@ -104,7 +104,6 @@ body {
 .nav__link {
   text-decoration: none;
 
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -124,7 +123,6 @@ body {
 }
 
 .contacts__link {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -155,7 +153,6 @@ body {
   margin: auto;
   width: 696px;
 
-  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -170,7 +167,6 @@ body {
   padding: 10px 32px;
   margin-top: 30px;
 
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -186,14 +182,13 @@ body {
 
 .specifics__box {
   display: flex;
+  justify-content: space-between;
 }
-
+.specifics__list {
+  width: 270px;
+}
 .specifics__title {
-  margin-bottom: 10px;
-
-  font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -203,9 +198,7 @@ body {
 }
 
 .specifics__text {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
@@ -218,20 +211,18 @@ body {
 }
 
 .our-work__title {
-  text-align: center;
-
-  font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
 
+  text-align: center;
   color: #212121;
 }
 
 .our-work__box {
   display: flex;
+  justify-content: space-between;
 }
 
 .our-team {
@@ -239,20 +230,18 @@ body {
 }
 
 .our-team__title {
-  text-align: center;
-
-  font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
 
+  text-align: center;
   color: #212121;
 }
 
 .our-team__box {
   display: flex;
+  justify-content: space-between;
 }
 
 .our-team__list {
@@ -270,7 +259,6 @@ body {
 }
 
 .our-team__name {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -281,13 +269,9 @@ body {
 }
 
 .our-team__text {
-  padding-top: 10px;
-  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-
   letter-spacing: 0.03em;
 
   color: #757575;
@@ -308,7 +292,6 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
-
   letter-spacing: 0.03em;
 
   color: #ffffff;
@@ -318,9 +301,8 @@ body {
 }
 
 .footer__address {
-  padding-top: 20px;
+  margin-top: 20px;
 
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -335,7 +317,6 @@ body {
 }
 
 .footer__link {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -351,9 +332,6 @@ body {
 /*  */
 /* main */
 
-.anchors__box {
-  display: flex;
-}
 .anchors {
   display: flex;
   justify-content: center;
@@ -364,7 +342,6 @@ body {
 }
 
 .anchors__button {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -388,11 +365,10 @@ body {
 }
 
 .portfolio {
-  padding-top: 50px;
-}
-.portfolio__box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .portfolio__list {
@@ -400,42 +376,29 @@ body {
   border: 1px solid #eeeeee;
 }
 
-.portfolio__list:nth-child(3n + 2) {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
 .portfolio__list:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
 .portfolio__description {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
 }
 
 .portfolio__title {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 200%;
-
   letter-spacing: 0.06em;
 
   color: #212121;
 }
 
 .portfolio__text {
-  padding-top: 4px;
+  margin-top: 4px;
 
-  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 187%;
-
   letter-spacing: 0.03em;
 
   color: #757575;
