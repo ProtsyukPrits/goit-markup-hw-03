@@ -59,11 +59,14 @@ img {
 
 /* header */
 .header {
-  height: 79px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__block {
+  height: 80px;
 
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header__logo {
@@ -264,9 +267,6 @@ img {
 /* Footer */
 .footer {
   background: #2f303a;
-}
-
-.footer__container {
   padding: 60px 0;
 }
 
@@ -326,11 +326,13 @@ img {
 }
 
 .anchors__button {
+  padding: 6px 22px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 162%;
+  line-height: 26px;
   letter-spacing: 0.03em;
 
   color: #212121;
